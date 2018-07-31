@@ -16,6 +16,8 @@ class ProductItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ThemeData theme = Theme.of(context);
+
     final imageWidget = Image.asset(
       productItem.assetPath,
       fit: BoxFit.cover,
@@ -46,14 +48,18 @@ class ProductItemCard extends StatelessWidget {
             SizedBox(height: 10.0),
             Text(
               productItem.title.toUpperCase(),
+              textAlign: TextAlign.left,
               overflow: TextOverflow.ellipsis,
               maxLines: 2,
+              style: theme.textTheme.subhead,
             ),
             SizedBox(height: 3.0),
             Text(
               productItem.subTitle,
+              textAlign: TextAlign.left,
               overflow: TextOverflow.ellipsis,
               maxLines: 2,
+              style: theme.textTheme.body1,
             ),
           ],
         ),
@@ -70,6 +76,8 @@ class HashtagItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ThemeData theme = Theme.of(context);
+
     List<Color> _colors = <Color>[];
     if (productItem.id % 2 == 0) {
       _colors = <Color>[Color(0xFF5671E4), Color(0xFFDF44EA)];
@@ -78,7 +86,7 @@ class HashtagItemCard extends StatelessWidget {
     }
 
     return Container(
-      width: 180.0,
+      width: 195.0,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.all(Radius.circular(5.0)), //TODO
@@ -89,7 +97,10 @@ class HashtagItemCard extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Text('# ${productItem.hashtag}'),
+        child: Text(
+          '# ${productItem.hashtag}',
+          style: theme.accentTextTheme.headline,
+        ),
       ),
     );
   }

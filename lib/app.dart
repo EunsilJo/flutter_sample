@@ -25,7 +25,7 @@ class _JJOAppState extends State<JJOApp> {
     });
   }
 
-  final ThemeData firstTheme = buildFirstTheme();
+  final ThemeData firstTheme = buildAppTheme();
 
   @override
   Widget build(BuildContext context) {

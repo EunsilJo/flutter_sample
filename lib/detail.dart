@@ -12,6 +12,7 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
     final NumberFormat formatter =  NumberFormat("#,###");
 
     final imageWidget = Image.asset(
@@ -53,21 +54,38 @@ class DetailPage extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: <Widget>[
-                            Text(productItem.title),
-                            SizedBox(height: 24.0),
+                            Text(
+                                productItem.title,
+                                style: theme.primaryTextTheme.headline,
+                            ),
+                            SizedBox(height: 48.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               children: <Widget>[
-                                Text(formatter.format(productItem.price)),
-                                Text('원')
+                                Text(
+                                    formatter.format(productItem.price),
+                                    style: theme.textTheme.display1,
+                                ),
+                                Text(
+                                    '원',
+                                    style: theme.textTheme.title,
+                                )
                               ],
                             ),
                             SizedBox(height: 24.0),
-                            Text(productItem.gender),
-                            Text('착용 모델 사이즈 : ${productItem.modelSize}'),
-                            Text('착용 사이즈 : ${productItem.size}'),
+                            Text(
+                                productItem.gender + '\n' +
+                                '착용 모델 사이즈 : ${productItem.modelSize}' + '\n' +
+                                '착용 사이즈 : ${productItem.size}' + '\n' +
+                                '디테일 핏 : 루즈',
+                                style: theme.textTheme.body2,
+                            ),
                             SizedBox(height: 24.0),
-                            Text(productItem.description)
+                            Text(
+                                productItem.description,
+                                style: theme.textTheme.body2,
+                            )
                           ],
                         ),
                       )
@@ -76,7 +94,10 @@ class DetailPage extends StatelessWidget {
                 ),
                 RaisedButton(
                     onPressed: () {},
-                    child: Text('BUY')
+                    child: Text(
+                        'BUY',
+                        style: theme.accentTextTheme.button,
+                    )
                 ),
               ],
             ),

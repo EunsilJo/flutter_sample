@@ -32,6 +32,8 @@ class BackPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+
     CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.start;
     TextAlign textAlign = TextAlign.left;
 
@@ -58,7 +60,7 @@ class BackPage extends StatelessWidget {
                       Text(
                           productItem.title.replaceAll(' ', '\n'),
                           textAlign: textAlign,
-                          style: TextStyle(fontSize: 52.0)
+                          style: theme.primaryTextTheme.display2
                       ),
                       SizedBox(height: 12.0),
                       Container(
@@ -75,7 +77,10 @@ class BackPage extends StatelessWidget {
                               ),
                             );
                           },
-                          child: Text('BUY'),
+                          child: Text(
+                              'BUY',
+                              style: theme.accentTextTheme.button
+                          ),
                         ),
                       )
                     ]

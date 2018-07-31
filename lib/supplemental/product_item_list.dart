@@ -49,12 +49,14 @@ class ProductItemList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ThemeData themeData = Theme.of(context);
+
     double _height = 0.0;
 
     if (productsItems[0].category == Category.hashtag) {
-      _height = 100.0;
+      _height = 125.0;
     } else {
-      _height = 320.0;
+      _height = 340.0;
     }
 
     return Container(
@@ -62,7 +64,9 @@ class ProductItemList extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Text(title),
+          Text(
+              title, style: themeData.primaryTextTheme.headline,
+          ),
           SizedBox(height: 18.0),
           Expanded(
             child: ListView(

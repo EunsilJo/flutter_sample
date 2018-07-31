@@ -14,18 +14,23 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+
     return Scaffold(
       body: Container(
         color: themePrimary,
         child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 24.0),
+          padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 48.0),
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 FlatButton(
                   onPressed: () {},
-                  child: Text('Sign up')
+                  child: Text(
+                      'Sign up',
+                      style: theme.primaryTextTheme.button
+                  )
                 )
               ],
             ),
@@ -48,7 +53,10 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text('Login')
+                child: Text(
+                    'Login',
+                    style: theme.accentTextTheme.button
+                )
             ),
             SizedBox(height: 70.0,),
             Row(

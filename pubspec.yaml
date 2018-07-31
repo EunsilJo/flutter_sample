@@ -22,3 +22,9 @@ flutter:
     - images/product/3.jpg
     - images/product/4.jpg
     - images/product/5.jpg
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: fonts/Gilroy-ExtraBold.otf
+        - asset: fonts/Gilroy-Light.otf
