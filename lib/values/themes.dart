@@ -15,7 +15,9 @@ ThemeData buildAppTheme() {
     textTheme: _buildTextTheme(base.textTheme, themeSurfaceText),
     primaryTextTheme: _buildTextTheme(base.primaryTextTheme, themePrimaryText),
     accentTextTheme: _buildTextTheme(base.accentTextTheme, themeSecondaryText),
-    primaryIconTheme: _buildIconTheme(base.iconTheme)
+    primaryIconTheme: _buildIconTheme(base.iconTheme, themeSecondary),
+    buttonTheme: _buildButtonTheme(base.buttonTheme, 48.0),
+    inputDecorationTheme: _buildDecorationTheme()
   );
 }
 
@@ -58,6 +60,33 @@ TextTheme _buildTextTheme(TextTheme base, Color themeTextColor) {
   );
 }
 
-IconThemeData _buildIconTheme(IconThemeData base) {
-  return base.copyWith(color: themeSecondary, opacity: 0.5);
+IconThemeData _buildIconTheme(IconThemeData base, Color color) {
+  return base.copyWith(color: color, opacity: 0.5);
+}
+
+ButtonThemeData _buildButtonTheme(ButtonThemeData base, double height) {
+  return base.copyWith(height: height);
+}
+
+InputDecorationTheme _buildDecorationTheme() {
+  return InputDecorationTheme(
+      border: OutlineInputBorder(),
+      contentPadding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0)
+  );
+}
+
+class PrimaryColorOverride extends StatelessWidget {
+  const PrimaryColorOverride({Key key, this.color, this.child})
+      : super(key: key);
+
+  final Color color;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Theme(
+      child: child,
+      data: Theme.of(context).copyWith(primaryColor: color),
+    );
+  }
 }

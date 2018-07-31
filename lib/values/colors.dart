@@ -17,6 +17,7 @@ const themeSecondaryText = firstThemeSecondaryText;
 const themeSurfaceText = firstThemeSurfaceText;
 
 const themeErrorRed = const Color(0xFFC5032B);
+const themeSecondary_50 = firstThemeSecondary_50;
 
 const firstThemePrimary = const Color(0xFFEDE3D0);
 const firstThemePrimaryDark = const Color(0xFFAD8D4D);
@@ -30,3 +31,4 @@ const firstThemeSurfaceLight = const Color(0xFFffffff);
 const firstThemePrimaryText = const Color(0xFF060606);
 const firstThemeSecondaryText = const Color(0xFFffffff);
 const firstThemeSurfaceText = const Color(0xFF060606);
+const firstThemeSecondary_50 = const Color(0x50000000);

@@ -61,7 +61,7 @@ class DetailPage extends StatelessWidget {
                             SizedBox(height: 48.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
-                              crossAxisAlignment: CrossAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
                                 Text(
                                     formatter.format(productItem.price),

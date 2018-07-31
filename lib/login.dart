@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'supplemental/custom_buttons.dart';
 import 'values/colors.dart';
+import 'values/themes.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -34,18 +35,31 @@ class _LoginPageState extends State<LoginPage> {
                 )
               ],
             ),
-            SizedBox(height: 100.0),
-            TextField(
-              controller: _emailController,
-              decoration: InputDecoration(
-                labelText: 'E-mail',
+            SizedBox(height: 120.0),
+            SizedBox(
+              height: 48.0,
+              child: PrimaryColorOverride(
+                color: firstThemeSecondary_50,
+                child: TextField(
+                  controller: _emailController,
+                  decoration: InputDecoration(
+                    labelText: 'E-mail',
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 20.0),
-            TextField(
-              controller: _passwordController,
-              decoration: InputDecoration(
-                labelText: 'Password',
+            SizedBox(
+              height: 48.0,
+              child: PrimaryColorOverride(
+                color: firstThemeSecondary_50,
+                child: TextField(
+                  controller: _passwordController,
+                  decoration: InputDecoration(
+                    labelText: 'Password',
+                  ),
+                  obscureText: true,
+                ),
               ),
             ),
             SizedBox(height: 20.0),
@@ -58,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: theme.accentTextTheme.button
                 )
             ),
-            SizedBox(height: 70.0,),
+            SizedBox(height: 70.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

@@ -65,7 +65,7 @@ class BackPage extends StatelessWidget {
                       SizedBox(height: 12.0),
                       Container(
                         width: 120.0,
-                        child: RaisedButton(
+                        child: MaterialButton(
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -77,6 +77,8 @@ class BackPage extends StatelessWidget {
                               ),
                             );
                           },
+                          color: themeSecondary_50,
+                          height: 36.0,
                           child: Text(
                               'BUY',
                               style: theme.accentTextTheme.button
