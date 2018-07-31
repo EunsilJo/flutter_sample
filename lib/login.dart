@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'supplemental/custom_buttons.dart';
+import 'values/colors.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -14,7 +15,8 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body: Container(
+        color: themePrimary,
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 24.0, vertical: 24.0),
           children: <Widget>[

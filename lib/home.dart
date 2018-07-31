@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'model/data.dart';
 import 'model/product_item.dart';
+
 import 'supplemental/product_list.dart';
 import 'detail.dart';
+import 'values/colors.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -44,7 +46,7 @@ class BackPage extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-          color: Colors.blue,
+          color: themePrimary,
           padding: EdgeInsets.all(36.0),
           child: Row(
             children: <Widget>[

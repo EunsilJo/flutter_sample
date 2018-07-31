@@ -8,6 +8,7 @@ import 'home.dart';
 import 'login.dart';
 import 'backdrop.dart';
 import 'values/strings.dart';
+import 'values/themes.dart';
 
 class JJOApp extends StatefulWidget {
   @override
@@ -24,6 +25,8 @@ class _JJOAppState extends State<JJOApp> {
     });
   }
 
+  final ThemeData firstTheme = buildFirstTheme();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,7 +39,8 @@ class _JJOAppState extends State<JJOApp> {
             )
         ),
         initialRoute: '/login',
-        onGenerateRoute: _getRoute
+        onGenerateRoute: _getRoute,
+        theme: firstTheme
     );
   }
 
