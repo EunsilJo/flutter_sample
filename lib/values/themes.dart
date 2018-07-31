@@ -15,7 +15,8 @@ ThemeData buildAppTheme() {
     textTheme: _buildTextTheme(base.textTheme, themeSurfaceText),
     primaryTextTheme: _buildTextTheme(base.primaryTextTheme, themePrimaryText),
     accentTextTheme: _buildTextTheme(base.accentTextTheme, themeSecondaryText),
-    primaryIconTheme: _buildIconTheme(base.iconTheme, themeSecondary),
+    primaryIconTheme: _buildIconTheme(base.iconTheme, Colors.black54),
+    accentIconTheme: _buildIconTheme(base.iconTheme, Colors.black),
     buttonTheme: _buildButtonTheme(base.buttonTheme, 48.0),
     inputDecorationTheme: _buildDecorationTheme()
   );
@@ -76,8 +77,8 @@ InputDecorationTheme _buildDecorationTheme() {
 }
 
 ShapeBorder buildButtonShapeBorder() {
-  return BeveledRectangleBorder(
-    borderRadius: BorderRadius.all(Radius.circular(7.0))
+  return RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(18.0))
   );
 }
 
