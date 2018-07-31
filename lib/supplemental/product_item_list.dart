@@ -54,7 +54,7 @@ class ProductItemList extends StatelessWidget {
     double _height = 0.0;
 
     if (productsItems[0].category == Category.hashtag) {
-      _height = 125.0;
+      _height = 138.0;
     } else {
       _height = 340.0;
     }
@@ -73,7 +73,8 @@ class ProductItemList extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: _buildColumns(context),
             ),
-          )
+          ),
+          SizedBox(height: 12.0)
         ],
       ),
     );

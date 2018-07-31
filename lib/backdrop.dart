@@ -110,13 +110,19 @@ class _FrontLayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        Expanded(
-          child: child,
-        ),
-      ],
+    return Material(
+      elevation: 8.0,
+      shape: BeveledRectangleBorder(
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(24.0))
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Expanded(
+            child: child,
+          ),
+        ],
+      ),
     );
   }
 }

@@ -34,7 +34,7 @@ class ProductItemCard extends StatelessWidget {
               margin: EdgeInsets.all(0.0),
               elevation: 2.0,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(const Radius.circular(0.0))
+                borderRadius: BorderRadius.all(Radius.circular(0.0))
               ),
               child: Container(
                 width: 130.0,
@@ -89,7 +89,7 @@ class HashtagItemCard extends StatelessWidget {
       width: 195.0,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.all(Radius.circular(5.0)), //TODO
+        borderRadius: BorderRadius.all(Radius.circular(5.0)),
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,

@@ -67,6 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.pop(context);
                 },
+                shape: buildButtonShapeBorder(),
                 child: Text(
                     'Login',
                     style: theme.accentTextTheme.button

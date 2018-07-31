@@ -6,6 +6,7 @@ import 'model/product_item.dart';
 import 'supplemental/product_list.dart';
 import 'detail.dart';
 import 'values/colors.dart';
+import 'values/themes.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -65,7 +66,8 @@ class BackPage extends StatelessWidget {
                       SizedBox(height: 12.0),
                       Container(
                         width: 120.0,
-                        child: MaterialButton(
+                        height: 36.0,
+                        child: RaisedButton(
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -78,7 +80,7 @@ class BackPage extends StatelessWidget {
                             );
                           },
                           color: themeSecondary_50,
-                          height: 36.0,
+                          shape: buildButtonShapeBorder(),
                           child: Text(
                               'BUY',
                               style: theme.accentTextTheme.button

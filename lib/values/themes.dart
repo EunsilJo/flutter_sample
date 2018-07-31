@@ -75,6 +75,12 @@ InputDecorationTheme _buildDecorationTheme() {
   );
 }
 
+ShapeBorder buildButtonShapeBorder() {
+  return BeveledRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(7.0))
+  );
+}
+
 class PrimaryColorOverride extends StatelessWidget {
   const PrimaryColorOverride({Key key, this.color, this.child})
       : super(key: key);
