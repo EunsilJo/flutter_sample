@@ -16,7 +16,7 @@ class ProductList extends StatelessWidget {
     }
     return List.generate(products.length, (int index) {
       return Container(
-        padding: EdgeInsetsDirectional.only(start: 12.0, bottom: 12.0),
+        padding: EdgeInsetsDirectional.only(start: 12.0, top: 10.0, bottom: 10.0),
         child: ProductItemList(
             title: products[index].title,
             productsItems: products[index].items

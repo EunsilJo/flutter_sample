@@ -54,7 +54,7 @@ class ProductItemList extends StatelessWidget {
     if (productsItems[0].category == Category.hashtag) {
       _height = 100.0;
     } else {
-      _height = 310.0;
+      _height = 320.0;
     }
 
     return Container(
@@ -63,7 +63,7 @@ class ProductItemList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Text(title),
-          SizedBox(height: 12.0),
+          SizedBox(height: 18.0),
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
