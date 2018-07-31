@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 ThemeData buildAppTheme() {
-  final ThemeData base = ThemeData.light();
+  final ThemeData base = ThemeData.dark();
   return base.copyWith(
     primaryColor: themePrimary,
     primaryColorLight: themePrimaryLight,
@@ -11,12 +11,13 @@ ThemeData buildAppTheme() {
     accentColor: themeSecondary,
     buttonColor: themeSecondary,
     backgroundColor: themeSurface,
+    scaffoldBackgroundColor: themeSurface,
     errorColor: themeErrorRed,
     textTheme: _buildTextTheme(base.textTheme, themeSurfaceText),
     primaryTextTheme: _buildTextTheme(base.primaryTextTheme, themePrimaryText),
     accentTextTheme: _buildTextTheme(base.accentTextTheme, themeSecondaryText),
-    primaryIconTheme: _buildIconTheme(base.iconTheme, Colors.black54),
-    accentIconTheme: _buildIconTheme(base.iconTheme, Colors.black),
+    primaryIconTheme: _buildIconTheme(base.iconTheme, Colors.white70),
+    accentIconTheme: _buildIconTheme(base.iconTheme, Colors.white),
     buttonTheme: _buildButtonTheme(base.buttonTheme, 48.0),
     inputDecorationTheme: _buildDecorationTheme()
   );
@@ -55,7 +56,7 @@ TextTheme _buildTextTheme(TextTheme base, Color themeTextColor) {
         fontWeight: FontWeight.bold
     ),
   ).apply(
-    fontFamily: 'Gilroy',
+    fontFamily: 'Nanum',
     displayColor: themeTextColor,
     bodyColor: themeTextColor
   );

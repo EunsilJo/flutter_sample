@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-const themePrimary = secondThemePrimary;
-const themePrimaryDark = secondThemePrimaryDark;
-const themePrimaryLight = secondThemePrimaryLight;
+const themePrimary = thirdThemePrimary;
+const themePrimaryDark = thirdThemePrimaryDark;
+const themePrimaryLight = thirdThemePrimaryLight;
 
-const themeSecondary = secondThemeSecondary;
-const themeSecondaryDark = secondThemeSecondaryDark;
-const themeSecondaryLight = secondThemeSecondaryLight;
+const themeSecondary = thirdThemeSecondary;
+const themeSecondaryDark = thirdThemeSecondaryDark;
+const themeSecondaryLight = thirdThemeSecondaryLight;
 
-const themeSurface = secondThemeSurface;
-const themeSurfaceDark = secondThemeSurfaceDark;
-const themeSurfaceLight = secondThemeSurfaceLight;
+const themeSurface = thirdThemeSurface;
+const themeSurfaceDark = thirdThemeSurfaceDark;
+const themeSurfaceLight = thirdThemeSurfaceLight;
 
-const themePrimaryText = secondThemePrimaryText;
-const themeSecondaryText = secondThemeSecondaryText;
-const themeSurfaceText = secondThemeSurfaceText;
+const themePrimaryText = thirdThemePrimaryText;
+const themeSecondaryText = thirdThemeSecondaryText;
+const themeSurfaceText = thirdThemeSurfaceText;
 
 const themeErrorRed = const Color(0xFFC5032B);
-const themeSecondary_50 = secondThemeSecondary_50;
+const themeSecondary_50 = thirdThemeSecondary_50;
 
 const firstThemePrimary = const Color(0xFFEDE3D0);
 const firstThemePrimaryDark = const Color(0xFFAD8D4D);
@@ -46,3 +46,17 @@ const secondThemePrimaryText = const Color(0xFF040404);
 const secondThemeSecondaryText = const Color(0xFF040404);
 const secondThemeSurfaceText = const Color(0xFF040404);
 const secondThemeSecondary_50 = const Color(0x50f8bbd0);
+
+const thirdThemePrimary = const Color(0xFF003a71);
+const thirdThemePrimaryDark = const Color(0xFF072151);
+const thirdThemePrimaryLight = const Color(0xFF244a80);
+const thirdThemeSecondary = const Color(0xFFcc60fd);
+const thirdThemeSecondaryDark = const Color(0xFFa02be9);
+const thirdThemeSecondaryLight = const Color(0xFFe3c1fa);
+const thirdThemeSurface = const Color(0xFF0d1a2a);
+const thirdThemeSurfaceDark = const Color(0xFF000000);
+const thirdThemeSurfaceLight = const Color(0xFF303e53);
+const thirdThemePrimaryText = const Color(0xFFffffff);
+const thirdThemeSecondaryText = const Color(0xFFffffff);
+const thirdThemeSurfaceText = const Color(0xFFffffff);
+const thirdThemeSecondary_50 = const Color(0x50cc60fd);

@@ -28,3 +28,8 @@ flutter:
       fonts:
         - asset: fonts/Gilroy-ExtraBold.otf
         - asset: fonts/Gilroy-Light.otf
+
+    - family: Nanum
+      fonts:
+        - asset: fonts/NanumSquareRoundEB.ttf
+        - asset: fonts/NanumSquareRoundL.ttf
