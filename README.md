@@ -32,12 +32,14 @@ It is easy to change the app style with the material design theme for color, typ
 <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/3-1.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/3-2.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/3-3.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/3-4.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/3-5.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/3-6.jpg?raw=true" height="290"/>
 
 * You can see the second material theme and layouts.
+* This version changed colors and shape.
 
 ### Tag 4.0
 
 <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/4-1.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/4-2.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/4-3.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/4-4.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/4-5.jpg?raw=true" height="290"/> <img src="https://github.com/EunsilJo/flutter_sample/blob/master/screenshots/4-6.jpg?raw=true" height="290"/>
 
 * You can see the third material theme and layouts.
+* This version changed colors and typography.
 
 ## Photo by Hust Wilson on Unsplash
 * https://unsplash.com/@hustwilson
