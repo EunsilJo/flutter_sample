@@ -1,11 +1,11 @@
 # flutter_sample
 [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
-A Flutter Project that helps you to change the style of app with the material design component. Android API 16+ required.
+A Flutter Project that helps you to change the style of app with material design components. Android API 16+ required.
 
 ## Getting started
 
-For help getting started with Flutter, view our online
+For help getting started with Flutter, view this online
 [documentation](https://flutter.io/).
 
 ## How to
